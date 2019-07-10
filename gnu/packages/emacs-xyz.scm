@@ -14322,7 +14322,7 @@ correctly.")
     (synopsis  "GNU Hyperbole: The Everyday Hypertextual Information Manager")
     (description "GNU Hyperbole: The Everyday Hypertextual Information Manager")
     (license license:gpl3+)
-    ))
+    )))
 
 (define-public emacs-slime-repl-ansi-color
   (let ((commit "ad03263f5d4de473bc173b64a6fc3dc1106393d7"))

@@ -6912,6 +6912,30 @@ target text being a contiguous sequence of characters.  A set of buffer zones
 is, in effect, a (typically) noncontiguous set of text.")
       (license license:gpl3+))))
 
+(define-public emacs-hyperbole
+(package
+  (name "emacs-hyperbole")
+  (version "7.0.3")
+  (source
+    (origin
+      (method url-fetch)
+      (uri (string-append
+             "https://elpa.gnu.org/packages/hyperbole-"
+             version
+             ".tar"))
+      (sha256
+        (base32
+          "1mvplaxfjji00gg8rkhidfsdl8knwi6c0ai149zm4djsfaww3ikh"))))
+  (build-system emacs-build-system)
+  (home-page
+    "http://www.gnu.org/software/hyperbole")
+  (synopsis
+    "GNU Hyperbole: The Everyday Hypertextual Information Manager")
+  (description "GNU Hyperbole: The Everyday Hypertextual Information Manager")
+  (license license:gpl3+))
+
+  )
+
 (define-public emacs-mu4e-alert
   (package
     (name "emacs-mu4e-alert")

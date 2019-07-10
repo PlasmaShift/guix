@@ -14300,23 +14300,28 @@ correctly.")
 
 (define-public emacs-hyperbole
   ;; ( let ((commit "ad03263f5d4de473bc173b64a6fc3dc1106393d7"))
+  ( let ((commit "997803df8e4dcc15c3284dac5dce4048812ec45b"))
   (package
     (name "emacs-hyperbole")
     (version "7.0.3")
     (source
      (origin
        (method url-fetch)
-       (uri (string-append
-             "https://elpa.gnu.org/packages/hyperbole-"
-             version
-             ".tar"))
+       (uri https://git.savannah.gnu.org/cgit/hyperbole.git/tree/
+        ;; (string-append
+        ;;      "https://elpa.gnu.org/packages/hyperbole-"
+        ;;      version
+        ;;      ".tar")
+        )
        (sha256
         (base32
          "1mvplaxfjji00gg8rkhidfsdl8knwi6c0ai149zm4djsfaww3ikh"))))
+         "1mvplaxfjji00gg8rkhidfsdl8knwi6c0ai149zm4djsfaww3ikh"
     (build-system emacs-build-system)
     (home-page "http://www.gnu.org/software/hyperbole")
     (synopsis  "GNU Hyperbole: The Everyday Hypertextual Information Manager")
     (description "GNU Hyperbole: The Everyday Hypertextual Information Manager")
+    (license license:gpl3+)
     ))
 
 (define-public emacs-slime-repl-ansi-color

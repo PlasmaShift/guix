@@ -316,7 +316,7 @@ access.")
                 '(16 24 32 48 64 128 256 512))
                (install-file "icons/qutebrowser.svg"
                              (string-append hicolor "/scalable/apps"))
-               
+
                (substitute* "qutebrowser.desktop"
                  (("Exec=qutebrowser")
                   (string-append "Exec=" out "/bin/qutebrowser")))
@@ -368,7 +368,7 @@ driven and does not detract you from your daily work.")
 (define-public next-gtk-webkit
   (package
     (name "next-gtk-webkit")
-    (version "1.2.2")
+    (version "1.2.3")
     (source
      (origin
        (method git-fetch)
@@ -377,7 +377,7 @@ driven and does not detract you from your daily work.")
              (commit version)))
        (sha256
         (base32
-         "1bif1k738knhifxhkn0d2x1m521zkx40pri44vyjqncp9r95hkbk"))
+         "1b5c6c7eb85c5ff8fc2968494c5b88a1ff8431be"))
        (file-name (git-file-name "next" version))))
     (build-system glib-or-gtk-build-system)
     (arguments
